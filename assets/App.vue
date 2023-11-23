@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import {onMounted} from "vue"
+
+onMounted(() => {
+  console.log('mounted')
+  fetch('/api/simple')
+    .then(response => response.json())
+    .then(data => console.log(data))
+})
 </script>
 
 <template>

@@ -13,9 +13,9 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./assets', import.meta.url))
     }
   },
-  // base: './assets/',
   build: {
     // generate manifest.json in outDir
+    outDir: 'dist',
     manifest: true,
     copyPublicDir: false,
     rollupOptions: {

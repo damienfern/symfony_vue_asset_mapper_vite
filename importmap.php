@@ -18,8 +18,13 @@ return [
         'path' => 'main.js',
         'preload' => true,
     ],
+    '/assets/main.js' => [
+        'path' => 'main.js',
+    ],
+    './AboutView.js' => [
+        'path' => 'AboutView.js',
+    ],
     'main.css' => [
         'path' => 'main.css',
-    ],
-    'logo.svg' =>['path' =>  'logo.svg']
+    ]
 ];

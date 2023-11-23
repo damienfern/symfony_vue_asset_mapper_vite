@@ -8,8 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RootController extends AbstractController
 {
-
-    // add php8 annotation route
     #[Route('/', name: 'root')]
     public function index(): Response
     {
