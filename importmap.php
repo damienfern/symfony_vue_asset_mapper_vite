@@ -21,6 +21,9 @@ return [
     '/assets/main.js' => [
         'path' => 'main.js',
     ],
+    './ContactView.js' => [
+        'path' => 'ContactView.js',
+    ],
     './AboutView.js' => [
         'path' => 'AboutView.js',
     ],
