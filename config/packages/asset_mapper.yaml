@@ -3,3 +3,5 @@ framework:
         # The paths to make available to the asset mapper.
         paths:
             - dist/
+        config_reader_id: 'asset_mapper.importmap.config_reader.manifest'
+        importmap_path: '%kernel.project_dir%/dist/manifest.json'
