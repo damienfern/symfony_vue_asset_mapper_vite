@@ -1,12 +1,12 @@
-import { fileURLToPath, URL } from 'node:url'
+import {fileURLToPath, URL} from 'node:url'
 
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue()
   ],
   resolve: {
     alias: {
@@ -14,12 +14,12 @@ export default defineConfig({
     }
   },
   build: {
+    minify: false,
     // generate manifest.json in outDir
     outDir: 'dist',
     manifest: true,
     copyPublicDir: false,
     rollupOptions: {
-      // overwrite default .html entry
       input: './assets/main.ts',
       output: {
         entryFileNames: '[name].js',
