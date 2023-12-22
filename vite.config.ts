@@ -22,9 +22,9 @@ export default defineConfig({
     rollupOptions: {
       input: './assets/main.ts',
       output: {
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]',
+        entryFileNames: '[name].[hash].js',
+        chunkFileNames: '[name].[hash].js',
+        assetFileNames: '[name].[hash].[ext]',
       }
     },
   },
